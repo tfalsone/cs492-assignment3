@@ -23,6 +23,8 @@
     #define FREE 0
     #define USED 1
 
+    #define MAX 1024
+
 // Structures
     typedef int bool;
     struct timeval tvbegin;
