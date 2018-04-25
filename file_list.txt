@@ -1,32 +1,14 @@
-  4598716      0 -rw-r--r--   1 thomas   thomas          0 Apr 21 15:59 ./file_list.txt
-  5377155      4 -rw-rw-r--   1 thomas   thomas       1452 Apr 21 15:21 ./cs492-assignment3/filesystem.h
-  6562895      4 -rw-rw-r--   1 thomas   thomas        632 Apr 21 14:53 ./cs492-assignment3/queue/queue_struct.h
-  6562896      4 -rw-rw-r--   1 thomas   thomas       3344 Apr 21 15:11 ./cs492-assignment3/queue/queue_struct.c
-  5377153      4 -rw-r--r--   1 thomas   thomas         53 Apr 21 13:58 ./cs492-assignment3/README.md
-  5377149      4 -rw-r--r--   1 thomas   thomas        107 Apr 21 13:58 ./cs492-assignment3/.git/packed-refs
-  5508964      4 -rw-r--r--   1 thomas   thomas        240 Apr 21 13:58 ./cs492-assignment3/.git/info/exclude
-  5377147      4 -rw-r--r--   1 thomas   thomas         73 Apr 21 13:58 ./cs492-assignment3/.git/description
-  5642788      4 -r--r--r--   1 thomas   thomas       1184 Apr 21 13:58 ./cs492-assignment3/.git/objects/pack/pack-0f5ff8336d25977f37801be627799d37e5a6b86a.idx
-  5642787      4 -r--r--r--   1 thomas   thomas        962 Apr 21 13:58 ./cs492-assignment3/.git/objects/pack/pack-0f5ff8336d25977f37801be627799d37e5a6b86a.pack
-  5377150      4 -rw-r--r--   1 thomas   thomas        270 Apr 21 13:58 ./cs492-assignment3/.git/config
-  5642814      4 -rw-r--r--   1 thomas   thomas        199 Apr 21 13:58 ./cs492-assignment3/.git/logs/HEAD
-  5773504      4 -rw-r--r--   1 thomas   thomas        199 Apr 21 13:58 ./cs492-assignment3/.git/logs/refs/heads/master
-  5773502      4 -rw-r--r--   1 thomas   thomas        199 Apr 21 13:58 ./cs492-assignment3/.git/logs/refs/remotes/origin/HEAD
-  5377154      4 -rw-rw-r--   1 thomas   thomas        217 Apr 21 14:00 ./cs492-assignment3/.git/index
-  5377151      4 -rw-r--r--   1 thomas   thomas         23 Apr 21 13:58 ./cs492-assignment3/.git/HEAD
-  5508999      4 -rwxr-xr-x   1 thomas   thomas       1348 Apr 21 13:58 ./cs492-assignment3/.git/hooks/pre-push.sample
-  5509000      4 -rwxr-xr-x   1 thomas   thomas        478 Apr 21 13:58 ./cs492-assignment3/.git/hooks/applypatch-msg.sample
-  5509001      4 -rwxr-xr-x   1 thomas   thomas        544 Apr 21 13:58 ./cs492-assignment3/.git/hooks/pre-receive.sample
-  5509002      8 -rwxr-xr-x   1 thomas   thomas       4898 Apr 21 13:58 ./cs492-assignment3/.git/hooks/pre-rebase.sample
-  5509003      4 -rwxr-xr-x   1 thomas   thomas       3610 Apr 21 13:58 ./cs492-assignment3/.git/hooks/update.sample
-  5509004      4 -rwxr-xr-x   1 thomas   thomas       1642 Apr 21 13:58 ./cs492-assignment3/.git/hooks/pre-commit.sample
-  5509005      4 -rwxr-xr-x   1 thomas   thomas        896 Apr 21 13:58 ./cs492-assignment3/.git/hooks/commit-msg.sample
-  5509006      4 -rwxr-xr-x   1 thomas   thomas        189 Apr 21 13:58 ./cs492-assignment3/.git/hooks/post-update.sample
-  5509008      4 -rwxr-xr-x   1 thomas   thomas       1239 Apr 21 13:58 ./cs492-assignment3/.git/hooks/prepare-commit-msg.sample
-  5509009      4 -rwxr-xr-x   1 thomas   thomas        424 Apr 21 13:58 ./cs492-assignment3/.git/hooks/pre-applypatch.sample
-  5509013      4 -rw-r--r--   1 thomas   thomas         41 Apr 21 13:58 ./cs492-assignment3/.git/refs/heads/master
-  5642812      4 -rw-r--r--   1 thomas   thomas         32 Apr 21 13:58 ./cs492-assignment3/.git/refs/remotes/origin/HEAD
-  5377152      4 -rw-r--r--   1 thomas   thomas        430 Apr 21 13:58 ./cs492-assignment3/.gitignore
-  5377157      4 -rw-rw-r--   1 thomas   thomas         25 Apr 21 14:03 ./cs492-assignment3/init_filesystem.c
-  5377148      4 -rw-rw-r--   1 thomas   thomas        107 Apr 21 14:03 ./cs492-assignment3/main.c
-  4598657      4 -rw-r--r--   1 thomas   thomas        661 Apr 21 15:53 ./dir_list.txt
+14248477       16 -rw-r--r--    1 Gregory          staff                12 May  3 18:16 .//.DS_Store
+14248666       16 -rw-r--r--    1 Gregory          staff                12 May  3 18:17 .//B/.DS_Store
+14248715       16 -rw-r--r--    1 Gregory          staff                12 May  3 18:18 .//B/E/.DS_Store
+14248716        8 -rw-r--r--    1 Gregory          staff                38 Mar 13  2015 .//B/E/two.png
+14248706       32 -rw-r--r--    1 Gregory          staff                61 Aug 13  2015 .//B/Parchment.png
+14248589        8 -rw-r--r--    1 Gregory          staff                50 Aug  6  2015 .//bar.png
+14248724       16 -rw-r--r--    1 Gregory          staff                12 May  3 18:18 .//C/.DS_Store
+14248728       16 -rw-r--r--    1 Gregory          staff                12 May  3 18:18 .//C/F/.DS_Store
+14248734        8 -rw-r--r--    1 Gregory          staff                60 Aug 30  2015 .//C/F/unmute.png
+14248650        8 -rw-r--r--    1 Gregory          staff                46 Mar 19  2015 .//coin.png
+14248648       16 -rw-r--r--    1 Gregory          staff                12 May  3 18:17 .//D/.DS_Store
+14248785        8 -rw-r--r--    1 Gregory          staff                65 Mar 12  2015 .//D/diamond.png
+14248772        8 -rw-r--r--    1 Gregory          staff                45 Mar 19  2015 .//D/peg.png
+14248656        8 -rw-r--r--    1 Gregory          staff                33 Mar 13  2015 .//zero.png
