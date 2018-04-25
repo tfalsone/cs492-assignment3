@@ -204,7 +204,9 @@ public:
             if(toPrint.at(0)->size != -1) //is a file
             {
                 printf("%s - %i bytes - %s\n", toPrint.at(0)->name.c_str(), toPrint.at(0)->size, toPrint.at(0)->getTime().c_str());
-                //toPrint.at(0)->myFiles->printLFile();
+                //
+
+		toPrint.at(0)->myFiles->printLFile();
                 
             }
             toPrint.erase(toPrint.begin());

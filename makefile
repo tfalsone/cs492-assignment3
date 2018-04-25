@@ -1,5 +1,5 @@
 # Name of your program:
-NAME=HW1exec
+NAME=Assign3Exec
 
 # List of all .cpp source code files included in your program (separated by spaces):
 SRC=FileSystem.cpp Block.hh FileBlock.hh GTree.hh LDisk.hh Node.hh
@@ -13,7 +13,7 @@ CPPFLAGS+= -std=c++11 -I $(INCPATH)
 
 
 all: $(OBJ)
-	g++ $(OBJ) -o $(NAME) -Wall -Werror
+	g++ $(OBJ) -o $(NAME)
 
 clean:
 	-$(RM) *~
