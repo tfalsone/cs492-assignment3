@@ -37,7 +37,6 @@
         queue* GDir;
         queue* GFiles;
     } dir;
-    dir *root;
 
     typedef struct disk {
         bool status;
@@ -67,7 +66,7 @@
     int BLOCK_SIZE;
     unsigned long int BLOCK_TOTAL;
     disk *Ldisk;
-
+    dir *root;
     int file_count;
     int dir_count;
     int fragmentation;
