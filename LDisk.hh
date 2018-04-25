@@ -1,3 +1,5 @@
+#pragma once
+
 #include <stdio.h>
 #include <string>
 #include <math.h>
@@ -84,7 +86,7 @@ public:
     }
     
     //Takes the blocks for the files
-    void takeBlocks(vector<int> blockIds, int byteSize)
+    void takeBlocks(std::vector<int> blockIds, int byteSize)
     {
         Block *prev = head;
         Block *curr = head;
@@ -109,7 +111,7 @@ public:
                         newBlock->add(curr->ids.at(j)); //create new block with id
                         curr->ids.erase(curr->ids.begin()+j); //erase from the current block
                         
-                        int sub = min(this->blockSize, byteSize);
+                        int sub = std::min(this->blockSize, byteSize);
                         this->blockSpace[totalInd] -= sub;
                         byteSize -= sub;
                         

@@ -1,16 +1,13 @@
-#include <stdio.h>
-#include <string>
-#include <math.h>
-#include <fstream>
+#pragma once
+
 #include <vector>
-#include <iostream>
 
 class Block
 {
 public:
     bool free;
     Block *next;
-    vector<int> ids;
+    std::vector<int> ids;
     
     //Creates an empty block
     Block()

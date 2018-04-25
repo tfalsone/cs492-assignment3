@@ -1,3 +1,5 @@
+#pragma once
+
 #include <stdio.h>
 #include <string>
 #include <math.h>
@@ -17,7 +19,7 @@ public:
     FileBlock *tail;
     int blockSize;
     int size;
-    vector<int> iOwn;
+    std::vector<int> iOwn;
     
     //Creates the Lfile
     LFile(int numBlock, int blockSize, LDisk* disk, int byteSize)
@@ -34,7 +36,7 @@ public:
     }
     
     //Adds to the file blocks
-    void addFileBlocks(vector<int> newOwn)
+    void addFileBlocks(std::vector<int> newOwn)
     {
         int size = newOwn.size();
         if(this->size > 0)
@@ -58,9 +60,9 @@ public:
     }
     
     //Take up blocks in LDisk
-    vector<int> occupyBlocks(int numBlock, LDisk *disk, int byteSize)
+    std::vector<int> occupyBlocks(int numBlock, LDisk *disk, int byteSize)
     {
-        vector<int> ret;
+        std::vector<int> ret;
         
         if(this->iOwn.size() > 0) //check if any open memory in blocks this file has
         {
@@ -68,7 +70,7 @@ public:
             {
                 if(disk->blockSpace[iOwn.at(i)] > 0)
                 {
-                    int sub = min(byteSize, disk->blockSpace[iOwn.at(i)]);
+                    int sub = std::min(byteSize, disk->blockSpace[iOwn.at(i)]);
                     disk->blockSpace[iOwn.at(i)] -= sub;
                     byteSize -= sub;
                     if(byteSize == 0)
