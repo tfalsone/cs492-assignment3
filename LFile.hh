@@ -118,4 +118,8 @@ public:
             tail = elem;
         }
     }
+
+    void printLFile() {
+        printf("test\n");
+    }
 };

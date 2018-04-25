@@ -1,12 +1,12 @@
   5377242      0 -rw-r--r--   1 thomas   thomas          0 Apr 25 15:19 ./file_list.txt
-  5377240      4 -rw-r--r--   1 thomas   thomas       3027 Apr 25 15:10 ./LFile.hh
+  5377240      4 -rw-r--r--   1 thomas   thomas         30 Apr 25 15:10 ./LFile.hh
   5377153      4 -rw-r--r--   1 thomas   thomas         53 Apr 25 14:49 ./README.md
-  5377170      8 -rw-r--r--   1 thomas   thomas       5485 Apr 25 15:10 ./FileSystem.cpp
-  5377244      4 -rw-r--r--   1 thomas   thomas        218 Apr 25 15:10 ./makefile
-  5377241      4 -rw-r--r--   1 thomas   thomas       3778 Apr 25 15:10 ./Node.hh
-  5377157    148 -rwxr-xr-x   1 thomas   thomas     148772 Apr 25 15:10 ./FileSystem
-  5377171     12 -rw-r--r--   1 thomas   thomas       9964 Apr 25 15:10 ./GTree.hh
-  5377239      8 -rw-r--r--   1 thomas   thomas       6367 Apr 25 15:10 ./LDisk.hh
-  5377155      4 -rw-r--r--   1 thomas   thomas        353 Apr 25 15:10 ./FileBlock.hh
+  5377170      8 -rw-r--r--   1 thomas   thomas         85 Apr 25 15:10 ./FileSystem.cpp
+  5377244      4 -rw-r--r--   1 thomas   thomas         18 Apr 25 15:10 ./makefile
+  5377241      4 -rw-r--r--   1 thomas   thomas         78 Apr 25 15:10 ./Node.hh
+  5377157    148 -rwxr-xr-x   1 thomas   thomas         72 Apr 25 15:10 ./FileSystem
+  5377171     12 -rw-r--r--   1 thomas   thomas         64 Apr 25 15:10 ./GTree.hh
+  5377239      8 -rw-r--r--   1 thomas   thomas         67 Apr 25 15:10 ./LDisk.hh
+  5377155      4 -rw-r--r--   1 thomas   thomas         53 Apr 25 15:10 ./FileBlock.hh
   5377172      4 -rw-r--r--   1 thomas   thomas          2 Apr 25 15:18 ./dir_list.txt
-  5377148      4 -rw-r--r--   1 thomas   thomas        815 Apr 25 15:10 ./Block.hh
+  5377148      4 -rw-r--r--   1 thomas   thomas         15 Apr 25 15:10 ./Block.hh
