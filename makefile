@@ -1,16 +1,36 @@
-NAME=Assign3Exec
-SRC=FileSystem.cpp Block.hh FileBlock.hh GTree.hh LDisk.hh LFile.hh Node.hh
+# Name of your program:
+NAME=HW1exec
+
+# List of all .cpp source code files included in your program (separated by spaces):
+SRC=FileSystem.cpp Block.hh FileBlock.hh GTree.hh LDisk.hh Node.hh
+
 SRCPATH=./
+OBJ=$(addprefix $(SRCPATH), $(SRC:.cpp=.o))
 
 RM=rm -f
-CXX      = c++
-CXX_FILE = $(wildcard *.cpp)
-TARGET   = $(patsubst %.cpp,%,$(CXX_FILE))
-CXXFLAGS = -g -fmessage-length=0
-INCPATH=include
+INCPATH=includes
 CPPFLAGS+= -std=c++11 -I $(INCPATH)
 
-all:
-	$(CXX) $(CXXFLAGS) $(CXX_FILE) -o $(TARGET)
+
+all: $(OBJ)
+	g++ $(OBJ) -o $(NAME) -Wall -Werror
+
 clean:
-	rm -f $(TARGET) $(TARGET).exe
+	-$(RM) *~
+	-$(RM) *#*
+	-$(RM) *swp
+	-$(RM) *.core
+	-$(RM) *.stackdump
+	-$(RM) $(SRCPATH)*.o
+	-$(RM) $(SRCPATH)*.obj
+	-$(RM) $(SRCPATH)*~
+	-$(RM) $(SRCPATH)*#*
+	-$(RM) $(SRCPATH)*swp
+	-$(RM) $(SRCPATH)*.core
+	-$(RM) $(SRCPATH)*.stackdump
+
+fclean: clean
+	-$(RM) $(NAME)
+
+re: fclean all
+
