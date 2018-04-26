@@ -51,7 +51,7 @@ public:
         bool currType = curr->free;
         int newSize = 1;
         
-        for(int i = 1; curr != nullptr; i++)
+        for(int i = 1; curr != NULL; i++)
         {
             if(prevType == currType)
             {
@@ -61,9 +61,9 @@ public:
                 prev->next = curr->next;
                 Block *temp = curr->next;
                 delete curr;
-                curr = nullptr;
+                curr = NULL;
                 curr = temp;
-                if(curr != nullptr)
+                if(curr != NULL)
                     currType = curr->free;
             }
             else
@@ -72,14 +72,14 @@ public:
                 prevType = currType;
                 
                 curr = curr->next;
-                if(curr != nullptr)
+                if(curr != NULL)
                     currType = curr->free;
                 
                 newSize++;
             }
         }
         
-        if(prev->next == nullptr)
+        if(prev->next == NULL)
             tail = prev;
         
         this->size = newSize;
@@ -97,7 +97,7 @@ public:
         
         int totalInd = 0;
         
-        for(int i = 0; curr != nullptr && ind < amount; i++, totalInd++)
+        for(int i = 0; curr != NULL && ind < amount; i++, totalInd++)
         {
             if(curr->free) //this node is free so look through it
             {
@@ -151,7 +151,7 @@ public:
                 {
                     Block *theNext = curr->next;
                     delete curr;
-                    curr = nullptr;
+                    curr = NULL;
                     curr = theNext;
                     prev = curr;
                 }

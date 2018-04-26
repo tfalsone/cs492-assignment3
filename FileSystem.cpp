@@ -31,16 +31,13 @@ int main(int argc, char *argv[])
         GTree *myTree = new GTree();
         
         string text;
-        ifstream myfile;
-
-        myfile.open(infoDir);
+        ifstream myfile(infoDir);
         //Add all the directories to the tree
         if (myfile.is_open())
         {
-            while (!myfile.eof())
+            while (myfile >> text)
             {
-                myfile >> text;
-                myTree->add(text, -1, nullptr, "", -1, "");
+                myTree->add(text, -1, NULL, "", -1, "");
             }
             myfile.close();
         }
@@ -49,39 +46,39 @@ int main(int argc, char *argv[])
         myfile.open(infoFile);
         if (myfile.is_open())
         {
-            while (!myfile.eof())
+            while (myfile >> text)
             {
                 //Get size
+                int fileSize;
                 for(int x = 1; x < 7; x++)
                     myfile >> text;
-                int fileSize = stoi(text);
-                cout<< fileSize;
+                fileSize = stoi(text);
                 
                 //Get month
+                string month;
                 myfile >> text;
-                string month = text;
-                cout<< month;
+                month = text;
                 
                 //Get day
+                int day;
                 myfile >> text;
-                int day = stoi(text);
-                cout<< day;
+                day = stoi(text);
                 
                 //Get time
+                string time;
                 myfile >>text;
-                string tm = text;
-                cout<< tm;
+                time = text;
                 
                 //Get name
+                string fileName;
                 myfile >> text;
-                string fileName = text;
-                cout<< fileName;
+                fileName = text;
                 
                 
                 //printf("%s: %d bytes\n", fileName.c_str(), fileSize);
                 LFile *myFileList = new LFile(ceil((double)fileSize/blockSize), blockSize, ldisk, fileSize);
                 
-                myTree->add(fileName, fileSize, myFileList, month, day, tm);
+                myTree->add(fileName, fileSize, myFileList, month, day, time);
                 //printf("%s: %d bytes\n", fileName.c_str(), fileSize);
             }
             myfile.close();

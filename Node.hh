@@ -32,9 +32,9 @@ public:
         this->name = name;
         this->file = false;
         this->size = -1;
-        this->next = nullptr;
-        this->myFiles = nullptr;
-        this->parent = nullptr;
+        this->next = NULL;
+        this->myFiles = NULL;
+        this->parent = NULL;
     }
     
     //Creates a node. This constructor is called for files
@@ -43,9 +43,9 @@ public:
         this->name = name;
         this->file = true;
         this->size = size;
-        this->next = nullptr;
+        this->next = NULL;
         this->myFiles = list;
-        this->parent = nullptr;
+        this->parent = NULL;
         
         struct tm *thisTime;
         
@@ -110,7 +110,7 @@ public:
             thisTime->tm_mday = day;
             int ind = ttime.find(':', 0);
             thisTime->tm_hour = stoi(ttime.substr(0, ind));
-            thisTime->tm_min = stoi(ttime.substr(ind + 1, ttime.size()));
+            thisTime->tm_min = stoi(ttime.substr(ind + 1, 2));
             
             theTime = thisTime;
         }

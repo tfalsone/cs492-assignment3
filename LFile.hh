@@ -24,8 +24,8 @@ public:
     //Creates the Lfile
     LFile(int numBlock, int blockSize, LDisk* disk, int byteSize)
     {
-        this->head = nullptr;
-        this->tail = nullptr;
+        this->head = NULL;
+        this->tail = NULL;
         
         this->blockSize = blockSize;
         if(numBlock > 0)
@@ -43,7 +43,7 @@ public:
         {
             FileBlock *elem = new FileBlock(newOwn.at(0), blockSize);
             iOwn.push_back(newOwn.at(0));
-            if(head == nullptr)
+            if(head == NULL)
             {
                 this->head = elem;
                 this->tail = elem;
@@ -107,7 +107,7 @@ public:
     //Adds a file block
     void add(FileBlock *elem)
     {
-        if(head == nullptr)
+        if(head == NULL)
         {
             head = elem;
             tail = elem;
