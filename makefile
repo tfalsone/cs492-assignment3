@@ -2,7 +2,7 @@
 NAME=Assign3Exec
 
 # List of all .cpp source code files included in your program (separated by spaces):
-SRC=FileSystem.cpp Block.hh FileBlock.hh GTree.hh LDisk.hh Node.hh
+SRC=FileSystem.cpp
 
 SRCPATH=./
 OBJ=$(addprefix $(SRCPATH), $(SRC:.cpp=.o))

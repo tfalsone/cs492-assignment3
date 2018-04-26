@@ -1,12 +1,14 @@
-  5377242      0 -rw-r--r--   1 thomas   thomas          0 Apr 25 15:19 ./file_list.txt
-  5377240      4 -rw-r--r--   1 thomas   thomas         30 Apr 25 15:10 ./LFile.hh
-  5377153      4 -rw-r--r--   1 thomas   thomas         53 Apr 25 14:49 ./README.md
-  5377170      8 -rw-r--r--   1 thomas   thomas         85 Apr 25 15:10 ./FileSystem.cpp
-  5377244      4 -rw-r--r--   1 thomas   thomas         18 Apr 25 15:10 ./makefile
-  5377241      4 -rw-r--r--   1 thomas   thomas         78 Apr 25 15:10 ./Node.hh
-  5377157    148 -rwxr-xr-x   1 thomas   thomas         72 Apr 25 15:10 ./FileSystem
-  5377171     12 -rw-r--r--   1 thomas   thomas         64 Apr 25 15:10 ./GTree.hh
-  5377239      8 -rw-r--r--   1 thomas   thomas         67 Apr 25 15:10 ./LDisk.hh
-  5377155      4 -rw-r--r--   1 thomas   thomas         53 Apr 25 15:10 ./FileBlock.hh
-  5377172      4 -rw-r--r--   1 thomas   thomas          2 Apr 25 15:18 ./dir_list.txt
-  5377148      4 -rw-r--r--   1 thomas   thomas         15 Apr 25 15:10 ./Block.hh
+14248477       16 -rw-r--r--    1 Matthew          maquiles                12 May  3  18:16 .//.DS_Store
+14248666       16 -rw-r--r--    1 Matthew          maquiles                12 May  3  18:17 .//B/.DS_Store
+14248715       16 -rw-r--r--    1 Matthew          maquiles                12 May  3  18:18 .//B/E/.DS_Store
+14248716        8 -rw-r--r--    1 Matthew          maquiles                38 Mar 13  20:15 .//B/E/two.png
+14248706       32 -rw-r--r--    1 Matthew          maquiles                61 Aug 13  20:15 .//B/Parchment.png
+14248589        8 -rw-r--r--    1 Matthew          maquiles                50 Aug  6  20:15 .//bar.png
+14248724       16 -rw-r--r--    1 Matthew          maquiles                12 May  3  18:18 .//C/.DS_Store
+14248728       16 -rw-r--r--    1 Matthew          maquiles                12 May  3  18:18 .//C/F/.DS_Store
+14248734        8 -rw-r--r--    1 Matthew          maquiles                60 Aug 30  20:15 .//C/F/unmute.png
+14248650        8 -rw-r--r--    1 Matthew          maquiles                46 Mar 19  20:15 .//coin.png
+14248648       16 -rw-r--r--    1 Matthew          maquiles                12 May  3  18:17 .//D/.DS_Store
+14248785        8 -rw-r--r--    1 Matthew          maquiles                65 Mar 12  20:15 .//D/diamond.png
+14248772        8 -rw-r--r--    1 Matthew          maquiles                45 Mar 19  20:15 .//D/peg.png
+14248656        8 -rw-r--r--    1 Matthew          maquiles                33 Mar 13  20:15 .//zero.png
