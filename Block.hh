@@ -13,7 +13,7 @@ public:
     Block()
     {
         free = true;
-        this->next = NULL;
+        this->next = nullptr;
     }
     
     //Creates a block with an initail id
@@ -21,7 +21,7 @@ public:
     {
         this->ids.push_back(id);
         free = true;
-        this->next = NULL;
+        this->next = nullptr;
     }
     
     //Adds an id to the block

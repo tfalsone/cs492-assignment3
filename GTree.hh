@@ -25,7 +25,7 @@ public:
     {
         root = new Node("./");
         FINALROOT = root;
-        parent = NULL;
+        parent = nullptr;
     }
     
     //Add node to the tree
@@ -33,7 +33,7 @@ public:
     {
         int i, j;
         Node *curr = root;
-        Node *elem;
+        Node *elem = nullptr;
         
         string currS;
         bool hit = false;
@@ -132,7 +132,7 @@ public:
     {
         if(name.compare("..") == 0)
         {
-            if(this->parent != NULL)
+            if(this->parent != nullptr)
             {
                 this->root = this->parent;
                 this->parent = this->parent->parent;
@@ -248,7 +248,7 @@ public:
             }
         }
         string inp = "";
-        Node *newNode = new Node(name, 0, new LFile(0, blockSize, NULL, 0), inp, -1, inp); //NULL LDisk bc the file has no size
+        Node *newNode = new Node(name, 0, new LFile(0, blockSize, nullptr, 0), inp, -1, inp); //NULL LDisk bc the file has no size
         this->newLoc->add(newNode);
     }
     
